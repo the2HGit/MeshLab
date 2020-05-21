@@ -29,11 +29,11 @@
 #include <common/filterscript.h>
 #include <common/meshlabdocumentxml.h>
 //#include <common/meshlabdocumentbundler.h>
-#include "../common/meshlabdocumentbundler.h"
+#include <common/meshlabdocumentbundler.h>
 #include <common/mlexception.h>
 #include <common/filterparameter.h>
 #include <wrap/qt/qt_thread_safe_memory_info.h>
-#include "../meshlab/mainwindow.h"
+#include <meshlab/mainwindow.h>
 #include <clocale>
 
 #include <QFileInfo>
