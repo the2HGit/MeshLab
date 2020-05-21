@@ -14,6 +14,7 @@ vcglib(commit hash): 910da4c3e310f2e6557bd7a39c4f1529e61573e5
 ```
 ---
 ## Build
+
 ### Command
 ```
 # VS 2017용 x64 네이티브 도구 명령 프롬프트 실행
@@ -26,7 +27,7 @@ vcglib(commit hash): 910da4c3e310f2e6557bd7a39c4f1529e61573e5
 ```
 # Generate external.sln
 > cd meshlab\src\external
-> qmake.exe external.pro
+> qmake -tp vc -recursive external.pro
 
 # Build external.sln
 ```
@@ -41,8 +42,9 @@ vcglib(commit hash): 910da4c3e310f2e6557bd7a39c4f1529e61573e5
 ```
 
 ### Solutions
-- jead.h error on **meshlabserver**
-	- ![](./add_include_directory.PNG)
+- jead.h error on **meshlabserver**   
+![](./add_include_directory.PNG)
+
 ---
 ## Reference
 1. [NAVER Blog](https://m.blog.naver.com/PostView.nhn?blogId=ekthatkxkd&logNo=221007127296&proxyReferer=https:%2F%2Fwww.google.com%2F)
