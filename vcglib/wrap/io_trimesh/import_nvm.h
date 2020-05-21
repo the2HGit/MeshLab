@@ -78,7 +78,7 @@ static void readline(FILE *fp, char *line, int max=1000){
 static bool ReadHeader(FILE *fp,unsigned int &num_cams){
     char line[1000];
     readline(fp, line);
-    if( (line[0]=='\0') || (0!=strcmp("NVM_V3", line)) ) return false;
+    if( (line[0]=='\0') || (0!=strcmp("NVM_V3 ", line)) ) return false;
     readline(fp, line);
     readline(fp, line); if(line[0]=='\0') return false;
     sscanf(line, "%d", &num_cams);

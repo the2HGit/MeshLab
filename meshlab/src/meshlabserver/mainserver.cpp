@@ -284,10 +284,9 @@ public:
 		}
 		else if (fi.suffix().toLower() == "nvm")
 		{
-			QString cameras_filename = filename;
 			QString model_filename;
 
-			if (!MeshDocumentFromNvm(md, cameras_filename, model_filename)) {
+			if (!MeshDocumentFromNvm(md, filename, model_filename)) {
 				fprintf(logfp, "Failed to open %s\n", filename);
 				return false;
 			}
@@ -296,6 +295,7 @@ public:
 			return false;
 
         QDir::setCurrent(curDir.absolutePath());
+
         return true;
     }
 
